@@ -4,6 +4,7 @@ A serverless coffee shop inventory management system built on AWS using API Gate
 This project demonstrates how a Solutions Architect designs for scalability, security, performance efficiency, and cost optimization using an event-driven, pay-per-use architecture.
 
 ---
+<img width="817" height="848" alt="Coffe List" src="https://github.com/user-attachments/assets/e90966e9-8ae7-44f0-87c6-01ec9dae73c4" />
 
 ## What I Built
 A complete inventory system where a coffee shop owner can:
@@ -34,7 +35,7 @@ CloudWatch provides logs + metrics across the stack.
 > Add your diagram image here once you export it from your notes / draw.io
 
 Example:
-![Architecture Diagram](docs/architecture.png)
+<img width="1287" height="623" alt="Coffe Shop Architecture" src="https://github.com/user-attachments/assets/25afeae5-5a3d-45fe-8b0e-3b2f4fc78efc" />
 
 ---
 
