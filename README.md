@@ -1,45 +1,52 @@
-# CartCraft Ecommerce
+# CoffeeShop Manager ☁️
+A serverless coffee shop inventory management system built on AWS using API Gateway, Lambda, DynamoDB, IAM, CloudWatch, and Amplify.
 
-## Features
+This project demonstrates how a Solutions Architect designs for scalability, security, performance efficiency, and cost optimization using an event-driven, pay-per-use architecture.
 
-- Beauty UI similar to ecommerce website
-- Fully responsive and mobile friendly
-- User can add items to cart
-- User can view details of an item
-- User can show total price in cart
-- In Item page user can add quantity of item to cart instead of click add more and more 
-
-## What technologies were used?
-
-- react.js (create-react-app)
-- react-dom-router
-- react-bootstrap
-- state management using Redux Toolkit
-
-## How can you clone and tweak this project?
-
-From your command line, first clone this repo:
-
-```
-# Clone this repository
-$ git clone https://github.com/techwithlucy/ztc-projects.git
-
-# Go into the repository
-$ cd multimart-react-ecommerce
-
-# Remove current origin repository
-$ git remote remove origin
-
-```
-
-Then you can install the dependencies using NPM:
-
-```
-# Install dependencies
-$ npm install
-
-# Start development server
-$ npm start
-```
-👨‍💻 Happy coding!
 ---
+
+## What I Built
+A complete inventory system where a coffee shop owner can:
+
+- View inventory (GET)
+- Add new coffee items (POST)
+- Update coffee details (PUT)
+- Delete sold-out items (DELETE)
+
+**Flow**
+Amplify (React frontend) → API Gateway → Lambda → DynamoDB  
+CloudWatch provides logs + metrics across the stack.
+
+---
+
+## AWS Services Used
+- **Amazon DynamoDB**: Inventory data store (coffeeId, name, price, available)
+- **AWS Lambda**: CRUD business logic
+- **AWS Lambda Layers**: Shared SDK + utilities
+- **Amazon API Gateway (HTTP API)**: REST endpoints + CORS
+- **Amazon CloudWatch**: Logs and monitoring
+- **AWS IAM**: Least-privilege permissions for Lambda to access DynamoDB
+- **AWS Amplify**: React frontend hosting and deployment
+
+---
+
+## Architecture Diagram
+> Add your diagram image here once you export it from your notes / draw.io
+
+Example:
+![Architecture Diagram](docs/architecture.png)
+
+---
+
+## Data Model (DynamoDB)
+**Table Name:** `CoffeeShop`  
+**Partition Key:** `coffeeId` (String)
+
+Example item:
+```json
+{
+  "coffeeId": "c123",
+  "name": "new cold coffee",
+  "price": 456,
+  "available": true
+}
