@@ -1,4 +1,4 @@
-# CoffeeShop Manager ☁️
+# CoffeeShop Manager 
 A serverless coffee shop inventory management system built on AWS using API Gateway, Lambda, DynamoDB, IAM, CloudWatch, and Amplify.
 
 This project demonstrates how a Solutions Architect designs for scalability, security, performance efficiency, and cost optimization using an event-driven, pay-per-use architecture.
